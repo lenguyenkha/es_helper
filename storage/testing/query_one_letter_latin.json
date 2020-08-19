@@ -1,0 +1,101 @@
+{
+  "function_score": {
+    "query": {
+      "bool": {
+        "should": [
+          {
+            "prefix": {
+              "name": {
+                "value": "string",
+                "boost": "integer"
+              }
+            }
+          },
+          {
+            "match_phrase": {
+              "name.sudachi": {
+                "query": "string",
+                "boost": "integer"
+              }
+            }
+          },
+          {
+            "match_phrase": {
+              "name.sudachi": {
+                "query": "string",
+                "boost": "integer",
+                "analyzer": "string"
+              }
+            }
+          },
+          {
+            "match_phrase": {
+              "name.sudachi": {
+                "query": "string",
+                "boost": "integer",
+                "analyzer": "string"
+              }
+            }
+          },
+          {
+            "match_phrase": {
+              "name.standard": {
+                "query": "string",
+                "boost": "integer"
+              }
+            }
+          },
+          {
+            "match_phrase": {
+              "name.standard": {
+                "query": "string",
+                "boost": "integer",
+                "analyzer": "string"
+              }
+            }
+          },
+          {
+            "match_phrase": {
+              "name.sudachi_shingle": {
+                "query": "string",
+                "boost": "integer",
+                "analyzer": "string"
+              }
+            }
+          },
+          {
+            "match_phrase": {
+              "name.edge_ngram_2_10": {
+                "query": "string",
+                "boost": "integer"
+              }
+            }
+          },
+          {
+            "match_phrase": {
+              "name.edge_ngram_2_10": {
+                "query": "string",
+                "boost": "integer",
+                "analyzer": "string"
+              }
+            }
+          },
+          {
+            "match_phrase_prefix": {
+              "name.standard": {
+                "query": "string",
+                "boost": "integer"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "script_score": {
+      "script": {
+        "source": "string"
+      }
+    },
+    "boost_mode": "string"
+  }
+}

@@ -1,0 +1,4 @@
+version: "1.0.0"
+title: ESE api
+description: >-
+  Eplus suggestion engine public api.

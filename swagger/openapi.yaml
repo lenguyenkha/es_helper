@@ -1,0 +1,39 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: ESE api
+  description: Eplus suggestion engine public api.
+servers:
+  - url: '{protocol}://{host}'
+    description: API document
+    variables:
+      protocol:
+        default: http
+        enum:
+          - http
+          - https
+      host:
+        description: API server IP Address or host name.
+        default: ''
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+      in: header
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: Secret
+  definitions:
+    $ref: definitions.yaml
+  schemas:
+    $ref: schemas.yaml
+security:
+  - ApiKeyAuth: []
+paths:
+  $ref: ./paths.yaml
+  /swagger:
+    x-swagger-pipe: swagger_raw
+

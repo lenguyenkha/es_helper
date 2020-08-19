@@ -1,0 +1,490 @@
+{
+  "function_score": {
+    "query": {
+      "bool": {
+        "should": [
+          {
+            "bool": {
+              "should": [
+                {
+                  "prefix": {
+                    "name": {
+                      "value": "string",
+                      "boost": "integer"
+                    }
+                  }
+                },
+                {
+                  "match_phrase": {
+                    "name.sudachi": {
+                      "query": "string",
+                      "boost": "integer"
+                    }
+                  }
+                },
+                {
+                  "match_phrase": {
+                    "name.sudachi": {
+                      "query": "string",
+                      "boost": "integer",
+                      "analyzer": "string"
+                    }
+                  }
+                },
+                {
+                  "match_phrase": {
+                    "name.sudachi": {
+                      "query": "string",
+                      "boost": "integer",
+                      "analyzer": "string"
+                    }
+                  }
+                },
+                {
+                  "match_phrase": {
+                    "name.standard": {
+                      "query": "string",
+                      "boost": "integer"
+                    }
+                  }
+                },
+                {
+                  "match_phrase": {
+                    "name.standard": {
+                      "query": "string",
+                      "boost": "integer",
+                      "analyzer": "string"
+                    }
+                  }
+                },
+                {
+                  "match_phrase": {
+                    "name.sudachi_shingle": {
+                      "query": "string",
+                      "boost": "integer",
+                      "analyzer": "string"
+                    }
+                  }
+                },
+                {
+                  "match_phrase": {
+                    "name.edge_ngram_2_10": {
+                      "query": "string",
+                      "boost": "integer"
+                    }
+                  }
+                },
+                {
+                  "match_phrase": {
+                    "name.edge_ngram_2_10": {
+                      "query": "string",
+                      "boost": "integer",
+                      "analyzer": "string"
+                    }
+                  }
+                },
+                {
+                  "match_phrase_prefix": {
+                    "name.standard": {
+                      "query": "string",
+                      "boost": "integer"
+                    }
+                  }
+                },
+                {
+                  "prefix": {
+                    "name.sudachi": {
+                      "value": "string",
+                      "boost": "integer"
+                    }
+                  }
+                },
+                {
+                  "prefix": {
+                    "name.sudachi": {
+                      "value": "string",
+                      "boost": "integer"
+                    }
+                  }
+                },
+                {
+                  "prefix": {
+                    "name.sudachi": {
+                      "value": "string",
+                      "boost": "integer"
+                    }
+                  }
+                },
+                {
+                  "prefix": {
+                    "name": {
+                      "value": "string",
+                      "boost": "integer"
+                    }
+                  }
+                },
+                {
+                  "match_phrase_prefix": {
+                    "name.sudachi": {
+                      "query": "string",
+                      "boost": "integer"
+                    }
+                  }
+                },
+                {
+                  "match_phrase_prefix": {
+                    "name.sudachi": {
+                      "query": "string",
+                      "boost": "integer",
+                      "analyzer": "string"
+                    }
+                  }
+                },
+                {
+                  "match_phrase_prefix": {
+                    "name.sudachi": {
+                      "query": "string",
+                      "boost": "integer",
+                      "analyzer": "string"
+                    }
+                  }
+                },
+                {
+                  "match_phrase_prefix": {
+                    "name.sudachi_shingle": {
+                      "query": "string",
+                      "boost": "integer",
+                      "analyzer": "string"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "bool": {
+              "should": [
+                {
+                  "prefix": {
+                    "other_names": {
+                      "value": "string",
+                      "boost": "integer"
+                    }
+                  }
+                },
+                {
+                  "match_phrase": {
+                    "other_names.sudachi": {
+                      "query": "string",
+                      "boost": "integer"
+                    }
+                  }
+                },
+                {
+                  "match_phrase": {
+                    "other_names.sudachi": {
+                      "query": "string",
+                      "boost": "integer",
+                      "analyzer": "string"
+                    }
+                  }
+                },
+                {
+                  "match_phrase": {
+                    "other_names.sudachi": {
+                      "query": "string",
+                      "boost": "integer",
+                      "analyzer": "string"
+                    }
+                  }
+                },
+                {
+                  "match_phrase": {
+                    "other_names.standard": {
+                      "query": "string",
+                      "boost": "integer"
+                    }
+                  }
+                },
+                {
+                  "match_phrase": {
+                    "other_names.standard": {
+                      "query": "string",
+                      "boost": "integer",
+                      "analyzer": "string"
+                    }
+                  }
+                },
+                {
+                  "match_phrase": {
+                    "other_names.sudachi_shingle": {
+                      "query": "string",
+                      "boost": "integer",
+                      "analyzer": "string"
+                    }
+                  }
+                },
+                {
+                  "match_phrase": {
+                    "other_names.edge_ngram_2_10": {
+                      "query": "string",
+                      "boost": "integer"
+                    }
+                  }
+                },
+                {
+                  "match_phrase": {
+                    "other_names.edge_ngram_2_10": {
+                      "query": "string",
+                      "boost": "integer",
+                      "analyzer": "string"
+                    }
+                  }
+                },
+                {
+                  "match_phrase_prefix": {
+                    "other_names.standard": {
+                      "query": "string",
+                      "boost": "integer"
+                    }
+                  }
+                },
+                {
+                  "prefix": {
+                    "other_names.sudachi": {
+                      "value": "string",
+                      "boost": "integer"
+                    }
+                  }
+                },
+                {
+                  "prefix": {
+                    "other_names.sudachi": {
+                      "value": "string",
+                      "boost": "integer"
+                    }
+                  }
+                },
+                {
+                  "prefix": {
+                    "other_names": {
+                      "value": "string",
+                      "boost": "integer"
+                    }
+                  }
+                },
+                {
+                  "prefix": {
+                    "other_names.sudachi": {
+                      "value": "string",
+                      "boost": "integer"
+                    }
+                  }
+                },
+                {
+                  "match_phrase_prefix": {
+                    "other_names.sudachi": {
+                      "query": "string",
+                      "boost": "integer"
+                    }
+                  }
+                },
+                {
+                  "match_phrase_prefix": {
+                    "other_names.sudachi": {
+                      "query": "string",
+                      "boost": "integer",
+                      "analyzer": "string"
+                    }
+                  }
+                },
+                {
+                  "match_phrase_prefix": {
+                    "other_names.sudachi": {
+                      "query": "string",
+                      "boost": "integer",
+                      "analyzer": "string"
+                    }
+                  }
+                },
+                {
+                  "match_phrase_prefix": {
+                    "other_names.sudachi_shingle": {
+                      "query": "string",
+                      "boost": "integer",
+                      "analyzer": "string"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "bool": {
+              "should": [
+                {
+                  "prefix": {
+                    "related_info": {
+                      "value": "string",
+                      "boost": "integer"
+                    }
+                  }
+                },
+                {
+                  "prefix": {
+                    "related_info.sudachi": {
+                      "value": "string",
+                      "boost": "integer"
+                    }
+                  }
+                },
+                {
+                  "prefix": {
+                    "related_info.sudachi": {
+                      "value": "string",
+                      "boost": "integer"
+                    }
+                  }
+                },
+                {
+                  "prefix": {
+                    "related_info": {
+                      "value": "string",
+                      "boost": "integer"
+                    }
+                  }
+                },
+                {
+                  "prefix": {
+                    "related_info.sudachi": {
+                      "value": "string",
+                      "boost": "integer"
+                    }
+                  }
+                },
+                {
+                  "match_phrase": {
+                    "related_info.sudachi": {
+                      "query": "string",
+                      "boost": "integer"
+                    }
+                  }
+                },
+                {
+                  "match_phrase": {
+                    "related_info.sudachi": {
+                      "query": "string",
+                      "boost": "integer",
+                      "analyzer": "string"
+                    }
+                  }
+                },
+                {
+                  "match_phrase": {
+                    "related_info.sudachi": {
+                      "query": "string",
+                      "boost": "integer",
+                      "analyzer": "string"
+                    }
+                  }
+                },
+                {
+                  "match_phrase": {
+                    "related_info.standard": {
+                      "query": "string",
+                      "boost": "integer"
+                    }
+                  }
+                },
+                {
+                  "match_phrase": {
+                    "related_info.standard": {
+                      "query": "string",
+                      "boost": "integer",
+                      "analyzer": "string"
+                    }
+                  }
+                },
+                {
+                  "match_phrase": {
+                    "related_info.sudachi_shingle": {
+                      "query": "string",
+                      "boost": "integer",
+                      "analyzer": "string"
+                    }
+                  }
+                },
+                {
+                  "match_phrase": {
+                    "related_info.edge_ngram_2_10": {
+                      "query": "string",
+                      "boost": "integer"
+                    }
+                  }
+                },
+                {
+                  "match_phrase": {
+                    "related_info.edge_ngram_2_10": {
+                      "query": "string",
+                      "boost": "integer",
+                      "analyzer": "string"
+                    }
+                  }
+                },
+                {
+                  "match_phrase_prefix": {
+                    "related_info.sudachi": {
+                      "query": "string",
+                      "boost": "integer"
+                    }
+                  }
+                },
+                {
+                  "match_phrase_prefix": {
+                    "related_info.sudachi": {
+                      "query": "string",
+                      "boost": "integer",
+                      "analyzer": "string"
+                    }
+                  }
+                },
+                {
+                  "match_phrase_prefix": {
+                    "related_info.sudachi": {
+                      "query": "string",
+                      "boost": "integer",
+                      "analyzer": "string"
+                    }
+                  }
+                },
+                {
+                  "match_phrase_prefix": {
+                    "related_info.standard": {
+                      "query": "string",
+                      "boost": "integer"
+                    }
+                  }
+                },
+                {
+                  "match_phrase_prefix": {
+                    "related_info.sudachi_shingle": {
+                      "query": "string",
+                      "boost": "integer",
+                      "analyzer": "string"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "script_score": {
+      "script": {
+        "source": "string"
+      }
+    },
+    "boost_mode": "string"
+  }
+}
